@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,12 +19,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #181818;
 }
 
 @layer utilities {
@@ -31,3 +27,60 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  html {
+    font-family: "Aleo", system-ui, sans-serif;
+  }
+}
+
+/* html, body{
+  overflow-x: hidden;
+  } */
+
+/* Subpage theming */
+
+/* colors: {
+  background: '#181818',
+  experiences: '#297476',
+  'experiences-dark': '#194647',
+  education: '#5E2B5F',
+  'education-dark': '#351D35',
+  projects: '#2C5E40',
+  'projects-dark': '#213D2C',
+  skills: '#A83737',
+  'skills-dark': '#5F2727',
+  contact: '#A87B37',
+  'contact-dark': '#69502A'
+}, */
+
+:root{
+  --color-primary: #297476;
+  --color-secondary: #194647;
+}
+
+[data-theme="experiences"] {
+  --color-primary: #297476;
+  --color-secondary: #194647;
+}
+
+[data-theme="education"] {
+  --color-primary: #974499;
+  --color-secondary: #351D35;
+}
+
+[data-theme="projects"] {
+  --color-primary: #2C5E40;
+  --color-secondary: #213D2C;
+}
+
+[data-theme="skills"] {
+  --color-primary: #A83737;
+  --color-secondary: #5F2727;
+}
+
+[data-theme="contact"] {
+  --color-primary: #A87B37;
+  --color-secondary: #69502A;
+}
+
