@@ -19,6 +19,7 @@ const config: Config = {
       colors: {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
+        titles: 'var(--color-titles)',
         background: '#181818',
         experiences: '#297476',
         'experiences-dark': '#194647',

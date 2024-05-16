@@ -62,6 +62,7 @@ body {
 [data-theme="experiences"] {
   --color-primary: #297476;
   --color-secondary: #194647;
+  --color-titles: #37AAAD;
 }
 
 [data-theme="education"] {
@@ -84,3 +85,12 @@ body {
   --color-secondary: #69502A;
 }
 
+
+
+.slick-prev::before{
+  color: var(--color-primary)!important;
+}
+
+.slick-next::before{
+  color: var(--color-primary)!important;
+}
