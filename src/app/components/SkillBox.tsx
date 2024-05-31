@@ -9,7 +9,7 @@ export default function SkillBox({theme, title, skills}:{theme:string, title:str
                     {skills.map(
                         //@ts-ignore
                         (skill)=>
-                        <div key={skill.title} className="flex h-[200px] w-[45%] border-2 border-primary px-4 justify-center items-center text-center relative">
+                        <div key={skill.title} className="flex h-[200px] w-[220px] sm:w-[45%] border-2 border-primary px-4 justify-center items-center text-center relative bg-background">
                             {skill.title}
                             <div className="absolute bottom-2 right-3 text-sm text-gray-500">
                                 {skill.note}

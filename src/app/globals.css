@@ -68,21 +68,25 @@ body {
 [data-theme="education"] {
   --color-primary: #974499;
   --color-secondary: #351D35;
+  --color-titles: #8E37AD;
 }
 
 [data-theme="projects"] {
   --color-primary: #2C5E40;
   --color-secondary: #213D2C;
+  --color-titles: #428A5F;
 }
 
 [data-theme="skills"] {
   --color-primary: #A83737;
   --color-secondary: #5F2727;
+  --color-titles: #A83737;
 }
 
 [data-theme="contact"] {
   --color-primary: #A87B37;
   --color-secondary: #69502A;
+  --color-titles: #A87B37;
 }
 
 
@@ -93,4 +97,8 @@ body {
 
 .slick-next::before{
   color: var(--color-primary)!important;
+}
+
+.img-drop-shadow{
+  filter: drop-shadow(0px 0px 7px #000);
 }

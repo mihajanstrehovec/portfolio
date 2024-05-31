@@ -1,5 +1,117 @@
 const projects = [
     {
+        title: 'Personal Finance Tracker',
+        subTitle: 'Telegram bot script for finances',
+        duration: '05/2024',
+        description: '',
+        bulletPoints: [
+            'Telegram bot API for communication', 
+            'Google sheets for data storage and manipulation',
+            'Report expenses',
+            'Generate reports (daily, weekly, monhtly)',
+            'Automated reporting'
+        ],
+        overview: {
+            title: "OVERVIEW",
+            description: "I've tried out multiple personal finance apps and I didn't manage to stick with any of them. The user flow was clunky and before I knew it the app that was trying to save me money, was costing me 2.99€ per month to collect digital dust. For that reason joined forces with my colleague who has already started the development (hoping that I will stick with something that I've helped make). Over the weekend I developed a Telegram bot that interacts with Google Sheets to help users report and manage their expenses. Communication between the bot and Google sheets is handled with a Google script, that based on the users input executes a task, like generating a weekly report that sends the user a text report as well as a Pie chart representing categories and a line chart for daily spendings."
+        },
+        rolesFunctionalities: {
+            title: "ROLES AND FUNCTIONALITIES",
+            roles: [
+                {
+                    role: "Customer",
+                    functionalities: [
+                        "Registration: Allow users to create an account.",
+                        "Login: Secure authentication for users to access their accounts.",
+                        "Product Browsing: View and search for products.",
+                        "Rating: Provide ratings for purchased products.",
+                        "Shopping Cart: Add products to a virtual shopping cart for purchase.",
+                        "Order History: View past orders and their details.",
+                        "Profile Editing: Update personal information."
+                    ]
+                },
+                {
+                    role: "Seller",
+                    functionalities: [
+                        "Login: Secure authentication for sellers.",
+                        "Order List: View a list of orders placed by customers.",
+                        "Order Approval and Cancellation: Manage customer orders by approving or canceling them.",
+                        "Creating New Products: Add new products to the store.",
+                        "Product Management: Edit, activate, or deactivate products.",
+                        "Profile Editing: Update personal information."
+                    ]
+                },
+                {
+                    role: "Admin",
+                    functionalities: [
+                        "Seller Creation: Add new sellers to the platform.",
+                        "Customer Management: Edit, activate, or deactivate customer accounts.",
+                        "Profile Editing: Update personal information."
+                    ]
+                }
+            ]
+        },
+        keyFeaturesTechnologies: {
+            title: "KEY FEATURES AND TECHNOLOGIES",
+            features: [
+                "Telegram bot: Set up a Telegram bot and connect it with Google scripts to receive commands.",
+                "Google sheets: Storing and manipulating data in Google Spreadsheet for ease of parsing and user interaction.",
+                "Expense charts: Creating charts using Googles Charts and uploading them to Google Drive for sharing with Telegram bot.",
+                "Data parsing: Working with differnet data types across different platforms with a highlight on Date objects.",
+                "Automation: Making sure the script will be able to run for years to come with minimal user interaction."
+            ]
+        },
+        projectContributions: {
+            contributions: [
+                {
+                    title: 'Data parsing',
+                    description: [
+                        'When creating reports I had to filter out data that matches the time period, initially I did this purely with JavaScript code, which worked but was slow.',
+                        'Final solution was implemented using Google Sheets functions and filters, with some code left for data manipulation',
+                        'Calculating sums and averages for days and categories of expenses.'
+                    ]
+                },
+                {
+                    title: 'Drawing charts',
+                    description: [
+                        'I created Pie charts and Line charts using Google Charts tool, and stored them on google Drive.',
+                        'When a user generates a report it is sent to him via Telegram with Chart images attached.'
+                    ]
+                },
+                {
+                    title: 'Setting up triggers',
+                    description: [
+                        'Using Google Scripts triggers I\'ve set up triggers that send report daily (at 8PM), weekly (Sun 8PM) and monhtly (1st of the month 8PM).'
+                    ]
+                }
+            ]
+        },
+        challengesSolutions: {
+            title: "CHALLENGES AND SOLUTIONS",
+            challenges: [
+                "Server Setup: Configured a LAMP server locally to run the PHP website.",
+                "Team Coordination: Managed a small team, delegating tasks and ensuring effective collaboration.",
+                "Compliance with Standards: Adhered to academic standards and project guidelines."
+            ]
+        },
+        achievements: {
+            title: "ACHIEVEMENTS",
+            achievements: [
+                "Functional Online Store: Developed a fully functional online store with user authentication, product management, and order processing.",
+                "Team Leadership: Successfully led a team to complete the project, demonstrating leadership and project management skills."
+            ]
+        },
+        image: [
+            '/img/personal_finance_bot_hero.png',
+            '/img/personal_finance_bot_hero_2.png'
+        ],
+        link: {
+            type: 'github',
+            url: 'https://github.com/mihajanstrehovec/personal_finance_bot'
+        }
+        
+    },
+    {
         title: 'SLADKET',
         subTitle: 'A PHP E-SHOP',
         duration: '02/2021',
@@ -13,7 +125,7 @@ const projects = [
         ],
         overview: {
             title: "OVERVIEW",
-            description: "The SLADKET project is a fully functional online store developed using PHP and MySQL. The project was designed to meet academic standards and is published on the Heroku platform with the addition of ClearDB for database management. The website features three types of users: customers, resellers, and admins, each with distinct functionalities."
+            description: (<>This was a college seminar assignment part of the subject e-commerce at FRI where we were tasked with creating a web shop using PHP and MySQL. <br></br>I paired up with two of my colleagues and took the initiative by creating the website wireframes and UX in Figma. Before we started with the development I set up our local environments for PHP using LAMP, which was a first for me. We also asked our selves questions like, what are the users types of users will be on the website (admin, customer, seller) and what their roles will be.<br></br> After we had a full picture of the project we started coding, it was one of my first time working with MVC architecture so it took some time getting used, same goes for PHP. But at the end we had a fully functioning e-commerce store for sweet tooths that only needs a payment system integration to work (something like Stripe).</>)
         },
         rolesFunctionalities: {
             title: "ROLES AND FUNCTIONALITIES",
@@ -58,15 +170,36 @@ const projects = [
                 "Heroku Deployment: Deployed the application on Heroku with ClearDB for database hosting.",
                 "User Roles: Implemented distinct user roles with specific functionalities and permissions.",
                 "MVC Architecture: Utilized Model-View-Controller architecture to structure the code.",
-                "Security Measures: Ensured secure login and data handling practices."
+                "Security Measures: Ensured secure login and data handling practices.",
+                "Emails: User confirmation code after registration, invoice after succesful purchase, password reset."
             ]
         },
         projectContributions: {
-            title: "PROJECT CONTRIBUTIONS",
             contributions: [
-                "Design and Development: Led the design and development of the web shop, collaborating with two classmates.",
-                "Team Organization: Organized and motivated team members to meet project deadlines and standards.",
-                "Academic Standards: Followed guidelines set by the professor to ensure the project met academic criteria for a good grade."
+                {
+                    title: 'Design and Development',
+                    description: [
+                        'Created wireframes for each page of the web shop including product gallery, single product page, add/edit product page, admin panel.',
+                        'Based on the wireframes I selected the primary colors and designed the UI of the website in Figma.',
+                        'I led the development process, implementing new features and setting up every component.',
+                        'Developed features like Cart, Order management (accept, decline, refund), add/edit product form.'
+                    ]
+                },
+                {
+                    title: 'Team Organization',
+                    description: [
+                        'Led, organized and motivated a small team of students to develop the e-commerce solution.',
+                        'Delegated tasks and engaged my teammates when they had difficulties with their responsibilites.'
+                    ]
+                },
+                {
+                    title: 'Emails',
+                    description: [
+                        'Set up email sender for customers using PHPMailer and gmail SMTP.',
+                        'Desgined and created HTML email templates and automated sending.',
+                        'Different scenarios for emails like customer registration verification code, invoice'
+                    ]
+                }
             ]
         },
         challengesSolutions: {
@@ -84,6 +217,14 @@ const projects = [
                 "Team Leadership: Successfully led a team to complete the project, demonstrating leadership and project management skills."
             ]
         },
+        image: [
+            '/img/SladketHero.png',
+            '/img/SladketCheckout.png'
+        ],
+        link: {
+            type: 'github',
+            url: 'https://github.com/mihajanstrehovec/Sladket'
+        }
         
     },
     {
@@ -101,7 +242,7 @@ const projects = [
         projectName: "Frigre (University Gaming Platform Web App)",
         overview: {
             title: "OVERVIEW",
-            description: "Frigre is a university gaming platform web application developed using Angular and MongoDB. The project, which was a collaborative effort with two college classmates, spans six months and was designed to host gaming events. The application includes user authentication via JWT and is deployed on Heroku. It also features Progressive Web App (PWA) capabilities and comprehensive documentation with Swagger."
+            description: (<>Frigre is a university gaming platform web application developed using Angular and MongoDB. The project, which was a collaborative effort with two college classmates, spans six months and was designed to host gaming events for students of the university. <br></br> Students can sign up to tournaments, create thier own teams, view the leaderboards select their game of choice and create tournaments. The application includes user authentication via JWT and is deployed on Heroku. It also features Progressive Web App (PWA) capabilities and comprehensive documentation with Swagger.</>)
         },
         rolesFunctionalities: {
             title: "ROLES AND FUNCTIONALITIES",
@@ -154,14 +295,55 @@ const projects = [
             ]
         },
         projectContributions: {
-            title: "PROJECT CONTRIBUTIONS",
             contributions: [
-                "Design and UX: Led the initial design and user experience efforts, ensuring an intuitive and engaging interface.",
-                "Web Development: Played a significant role in the development of the web application, focusing on both front-end and back-end tasks.",
-                "Team Collaboration: Collaborated closely with two classmates, learning the importance of teamwork and effective communication.",
-                "PWA Implementation: Successfully transformed the web application into a Progressive Web App, enhancing its functionality and offline capabilities.",
-                "Discord Bot Integration: Implemented a Discord bot using Widgetbot.io, facilitating user communication and engagement.",
-                "Website Optimization: Conducted performance and accessibility optimization using Lighthouse."
+                {
+                    title: 'Design and UX',
+                    description: [
+                        'I was in charge of creating the wireframe, UI design, component design and UX.',
+                        'Designed all the main pages - landing page, profile editor, tournament creation, admin panel, leaderboards, tournament page.',
+                        'Visualized data insight such as number of players, games played, tournaments and so on with different charts approriate for the data set.'
+                    ]
+                },
+                {
+                    title: 'Development',
+                    description: [
+                        'Played a significant role in the development of the web application, focusing on both front-end and back-end tasks.',
+                        'Worked on storing and parsing the tournament data such as wins, team statistics, player statistics.',
+                        'Worked on displaying the leaderboards data in a table that can be filtered, sorted and has pagination.',
+                        'Worked on Admin features such as banning teams, players, creating tournaments both on front and back end.'
+                    ]
+                },
+                {
+                    title: 'Team Collaboration',
+                    description: [
+                        'Collaborated closely with two classmates, learning the importance of teamwork and effective communication.',
+                        'The project tought me to trust my team mates and delegate more work to them.',
+                        'Organizing task delegation and clear communication of the progress.'
+                    ]
+                },
+                {
+                    title: 'PWA Implementation',
+                    description: [
+                        'Successfully transformed the web application into a Progressive Web App, enhancing its functionality and offline capabilities.',
+                        'Set up services for offline capabilites.'
+                    ]
+                },
+                {
+                    title: 'Documentation',
+                    description: [
+                        'Worked on documenting APIs with swagger.',
+                        'Understanding what the code does and describing it concisely was a challenge',
+                        'Learned the importance of one action per function.'
+                    ]
+                },
+                {
+                    title: 'Website Optimization',
+                    description: [
+                        'Conducted performance and accessibility optimization using Lighthouse.',
+                        'Based on the results I optimized images, text contrast, and page load.',
+                        'Cleaned up unnecessary scripts and libraries.'
+                    ]
+                }
             ]
         },
         challengesSolutions: {
@@ -184,6 +366,14 @@ const projects = [
                 "Improved Interaction: Integrated a Discord bot to facilitate communication among users.",
                 "Enhanced Performance: Optimized the website's performance and accessibility using Lighthouse."
             ]
+        },
+        image: [
+            '/img/FrigreHome.png',
+            '/img/FrigreTournaments.png'
+        ],
+        link: {
+            type: 'github',
+            url: 'https://github.com/sp-2020-2021/LP-18'
         }
     },
     {
@@ -198,78 +388,68 @@ const projects = [
         ],
         overview: {
             title: "OVERVIEW",
-            description: "The PKP project, titled 'Knowledge for the Health and Well-being of Brachycephalic Dogs,' focused on digital production to create educational and informational content for veterinary purposes. The project involved collaboration with professors from the Faculty of Electrical Engineering and the Veterinary Faculty."
+            description: (<>The PKP project, titled Knowledge for the Health and Well-being of Brachycephalic Dogs, focused on digital production to create educational and informational content for veterinary purposes. The project involved collaboration with professors from the Faculty of Electrical Engineering and the Veterinary Faculty.<br></br> For this project I created digital content as per professors requests, where I had to understand the veterinary procedures and translate those into educational animations. Visualizing data was also a big part of this project as I was in charge of showcasing results of the professors research.  I also created a flyer that the university used to make the public more aware of the problems.</>)
         },
-        contributionsActivities: {
-            title: "CONTRIBUTIONS AND ACTIVITIES",
-            activities: [
+        
+        projectContributions: {
+           contributions: [
                 {
                     title: "Informational Flyer",
-                    description: "Created an informational flyer for special needs dogs. Ensured the flyer contained accurate and useful information for dog owners and veterinary professionals."
+                    description: [
+                        "I made an informational flyer for the university to use as promotional material.",
+                        "Set up meetings with the professors to understand their vision.",
+                        "Tried to balance the importance of information as well as design and eyecatching visuals."
+                    ]
                 },
                 {
                     title: "Animations",
-                    description: "Developed animations to represent surgical procedures on dogs. The animations were used in a national TV segment to educate the public about veterinary surgeries."
+                    description: [
+                        "Created animations to showcase surgical procedures on dogs, making them both informational and not as hard to watch as the real deal.",
+                        "The animations were used in a national TV segment to educate the public about veterinary surgeries.",
+                        "Stuck mostly to 2D animations to keep the animations easier to watch."
+                    ]
                 },
                 {
                     title: "Collaboration",
-                    description: "Worked with professors from the Faculty of Electrical Engineering and Veterinary Faculty to ensure the accuracy and educational value of the materials. Assisted a multimedia colleague in creating accurate and detailed 3D models for the animations using Blender. Reviewed veterinary literature to ensure the animations accurately depicted surgical procedures."
+                    description: [
+                        "Worked with professors from the Faculty of Electrical Engineering and Veterinary Faculty to ensure the accuracy and educational value of the materials.",
+                        "Assisted a multimedia colleague in creating accurate and detailed 3D models for the animations using Blender.",
+                        "Reviewed veterinary literature to ensure the animations accurately depicted surgical procedures.",
+                        "Responded to feedback from mentors and made necessary adjustments to the animations and materials."
+                    ]
                 },
                 {
                     title: "Project Management",
-                    description: "Managed the timeline and coordinated tasks to ensure the project met all deadlines. Responded to feedback from mentors and made necessary adjustments to the animations and materials."
+                    description: [
+                        "Managed the timeline and coordinated tasks to ensure the project met all deadlines.",
+                        
+                    ]
                 },
                 {
                     title: "Technical and Creative Skills",
-                    description: "Utilized software tools such as Blender for 3D modeling and animation. Created high-quality digital content that adhered to veterinary guidelines and educational standards. Addressed technical challenges such as creating accurate 3D models and ensuring the animations were clear and informative."
+                    description: [
+                        "Utilized software tools such as Blender for 3D modeling and animation.  ",
+                        "Created high-quality digital content that adhered to veterinary guidelines and educational standards.",
+                        "Addressed technical challenges such as creating accurate 3D models and ensuring the animations were clear and informative."
+                    ]
                 }
             ]
         },
-        timeline: {
-            title: "TIMELINE HIGHLIGHTS",
-            milestones: [
-                {
-                    month: "October 2018",
-                    activities: [
-                        "Initial research and literature review on brachycephalic syndrome and surgical techniques."
-                    ]
-                },
-                {
-                    month: "November 2018",
-                    activities: [
-                        "Began creating sketches and preliminary models for the animations.",
-                        "Collaborated with professors and a multimedia colleague to refine the designs."
-                    ]
-                },
-                {
-                    month: "February 2019",
-                    activities: [
-                        "Assisted in the creation of 3D models and the animation process using Blender.",
-                        "Ensured the animations were accurate and followed veterinary guidelines."
-                    ]
-                },
-                {
-                    month: "May 2019",
-                    activities: [
-                        "Continued refining animations based on mentor feedback.",
-                        "Adjusted the placement of sutures, the folding of the soft palate, and the speed of the operation."
-                    ]
-                },
-                {
-                    month: "June 2019",
-                    activities: [
-                        "Finalized animations and submitted them for mentor approval.",
-                        "Created the informational flyer for special needs dogs."
-                    ]
-                },
-                {
-                    month: "July 2019",
-                    activities: [
-                        "Completed the final adjustments to the animations and received mentor approval.",
-                        "Ensured all project deliverables were submitted on time."
-                    ]
-                }
+        keyFeaturesTechnologies: {
+            title: "KEY FEATURES AND TECHNOLOGIES",
+            features: [
+                "Balancing creativity and design principles alongside clarity of educational content.",
+                "Following guidelines and standards for TV broadcasting (format, duration, contrast).",
+                "Time management and optimization to deliver before deadline.",
             ]
+        },
+        image: [
+            '/img/pkp_hero.png',
+            '/img/pkp_hero_2.png'
+        ],
+        link: {
+            type: 'youtube',
+            url: 'https://www.youtube.com/watch?v=Y8oGU0HDwfw'
         }
     },
     {
@@ -282,18 +462,66 @@ const projects = [
             'Coordinating photoshoots at the event',
             'Photo editing',
             'Video editing'
-        ]
-    },
-    {
-        title: 'Calendar 4.543e9',
-        subTitle: 'Illustrated calendar for 2019',
-        duration: '05/2019',
-        description: '',
-        bulletPoints: [
-            'Illustration for 4 seasons of the year',
-            'Created in Adobe Illustrator',
-            'Prepared the designs for print'
-        ]
+        ],
+        overview: {
+            title: "OVERVIEW",
+            description: "I was invited by the young trap group CapitalCrew to photograph their Vibe Check event. I gladly accepted as it presented an interesting challenge. Before the event, I met with the group to prepare, creating a mood board and a simple storyboard to guide my photography. During the event, I stayed focused on capturing key moments. Afterward, I edited the photos using Photoshop and Lightroom, and my work was featured on the profiles of all the artists involved."
+        },
+        keyFeaturesTechnologies: {
+            title: "KEY FEATURES AND TECHNOLOGIES",
+            features: [
+                "Understanding camera settings and on the go adjusting to the scene.",
+                "Detailed planning and preparation for events to anticipate and avoid surprises.",
+                "Engaging with the crowd to capture vibrant and dynamic shots.",
+                "Complying with on-location requests from the group for specific shots.",
+                "Executing post-production to convey the energy and visual identity of the group.",
+            ]
+        },
+        projectContributions: {
+            contributions: [
+                {
+                    title: "Preparation",
+                    description: [
+                        "Collaborating with the group to define the creative direction.",
+                        "Offering valuable input for structuring the event timeline.",
+                        "Visualizing the event layout to determine optimal positioning and necessary gear."
+                    ]
+                },
+                 {
+                     title: "Photography",
+                     description: [
+                        "Capturing performers on stage from various angles to provide a comprehensive view.",
+                        "Interacting with the crowd to take immersive and lively photos.",
+                        "Adjusting camera settings and positioning in response to the dynamic event environment."
+                    ]
+                 },
+                 {
+                     title: "Videography",
+                     description: [
+                        "Recording performers to ensure all significant moments are captured.",
+                        "Using a GoPro attached to the microphone for unique and creative shots.",
+                        "Adhering to established videography rules and standards for consistent quality."
+                    ]
+                 },
+                 {
+                     title: "Post production",
+                     description: [
+                        "Editing photos using Lightroom and Photoshop to enhance quality.",
+                        "Creating an aftermovie by editing video footage in Premiere Pro.",
+                        "Designing and integrating 3D objects for the aftermovie using Blender."
+                     ]
+                 }
+             ]
+         },
+         image: [
+            '/img/CapitalCrewHero2.png',
+            '/img/CapitalCrewHero.png'
+        ],
+         link: {
+            type: 'instagram',
+            url: 'https://www.instagram.com/p/CErHipvjQA-/?hl=en&img_index=1'
+        }
+
     },
     {
         title: 'PICA',
@@ -306,7 +534,66 @@ const projects = [
             'Building sets with Legos',
             'Stop motion photography',
             'Video editing'
-        ]
+        ],
+        overview: {
+            title: "OVERVIEW",
+            description: (<>During my time at Srednja medijska in grafična šola Ljubljana I colaborated with a group of students to create a <span className=" text-titles">stop motion short movie</span> for one of the subjects. We first decided to use LEGO bricks for the materials and started with the script. Each member contributed their ideas and I put together the final script with as many suggestions as possible. We then made a story board to help us visualize the final project, this was very helpfull as it was easier to do scenography later on. <br/><br/>This was our next task, building the sets and off we went taking photos of each frame of the animation. It was a long and exhausting process as we had to be meticulous about every little thing. Along with the process of shooting I started editing the movie with the pictures we already had, I took care of the sound design, voice over, compositing, editing and all the other post production elements. Thankfully the hard work paid off as we got invited to <span className=" text-titles"> Enimation </span> a short film festival.</>)
+        },
+        
+        projectContributions: {
+           contributions: [
+                {
+                    title: "Script writing",
+                    description: [
+                        "Brainstorming different script ideas, listening to all team members inputs.",
+                        "Reviewing all the ideas and using them to write the final script.",
+                        "Writing dialog, scene descriptions and timeline.",
+                        
+                    ]
+                },
+                {
+                    title: "Stop motion photography",
+                    description: [
+                        "Setting up the scenography with Lego bricks.",
+                        "Lighting the scene with studio lights, which was very difficult as Lego bricks are reflective.",
+                        "Moving the characters between frames.",
+                        "Configuring the cameras settings for optimal photos and consistency."
+                    ]
+                },
+                {
+                    title: "Post production",
+                    description: [
+                        "In charge of the postproduction including sound design, editing, compositing, dialog.",
+                        "Recording dialog and processing the sound for different voice styles.",
+                        "Finding and recording foliage sound effects then used in the edit to bring the movie to life.",
+                        "Compositing videos with green screen."
+                    ]
+                },
+                {
+                    title: "Collaboration",
+                    description: [
+                        "Organized and motivated my team mates and delegated tasks during production.",
+                        "Worked closely with a team of 5 people utilizing each members potential.",
+                    ]
+                }
+            ]
+        },
+        keyFeaturesTechnologies: {
+            title: "KEY FEATURES AND TECHNOLOGIES",
+            features: [
+                "The project tough me a lot, most of all how important preparation is and how much time it can save.",
+                "The short stop motion movie was viewed in Španski borci and Enimation short film festival.",
+                "Meticulous project with little to no room for error.",
+            ]
+        },
+        image: [
+            '/img/pica_hero.png',
+            '/img/pica_hero_2.png'
+        ],
+        link: {
+            type: 'youtube',
+            url: 'https://www.youtube.com/watch?v=mIyoJ9r6KRY'
+        }
     }
 
 ]

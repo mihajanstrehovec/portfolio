@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="">
       <Header colorTheme="education"/>
-      <div className="grid columns-1 grid-cols-1 w-4/5 mx-auto gap-16 max-w-[1140px] justify-center mt-10 mb-14 3l:px-10">
+      <div className="grid columns-1 grid-cols-1 px-3 sm:px-0 sm:w-4/5 mx-auto gap-16 max-w-[1140px] justify-center mt-10 mb-14 3l:px-10">
         {education.map((item) =>
         <div key={item.title} className="">
           <ContentBox 

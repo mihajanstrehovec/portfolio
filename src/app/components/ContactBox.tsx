@@ -17,7 +17,7 @@ export default function ContactBox({ theme }:{ theme:string }){
                         //@ts-ignore
                         (contact)=>
                         <a key={contact.title} href={contact.link} target="_blank">
-                            <div className="flex h-[200px] w-[220px] border-2 border-primary px-4 justify-center items-center text-center relative text-sm">
+                            <div className="flex h-[200px] w-[220px] border-2 border-primary px-4 justify-center items-center text-center relative text-sm bg-background">
                                 
                                     {contact.title}
                                 

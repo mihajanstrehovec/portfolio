@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        img: '0 0 7 #000'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -41,6 +44,8 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path')
+  ],
 };
 export default config;

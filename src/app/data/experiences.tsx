@@ -15,7 +15,7 @@ const experiences = [
             title: 'ROLE OVERVIEW',
             description: 'As a QA Engineer specializing in Customer Experience and Testing at Plume Design, Inc., I ensure the seamless performance and high quality of our products. My role involves rigorous testing, automation scripting, and cross-functional collaboration to enhance product reliability and user satisfaction.'  
         },
-        keyResponsibilites: {
+        keyResponsibilities: {
             title: 'KEY RESPONSIBILITES',
             responsibilities: [
                 {
