@@ -23,7 +23,7 @@ const config: Config = {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         titles: 'var(--color-titles)',
-        background: '#181818',
+        background: '#0E0E10',
         experiences: '#297476',
         'experiences-dark': '#194647',
         education: '#5E2B5F',

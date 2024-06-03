@@ -172,7 +172,7 @@ const experiences = [
         }
     },
     {
-        title: 'Software Developer, Event Technology Solutions',
+        title: 'Software Developer',
         subTitle: 'ECHO events',
         duration: '01/2024 - ongoing',
         description: 'Developed and tested ticket validation app and management system',
@@ -422,7 +422,7 @@ const experiences = [
         }
     },
     {
-        title: 'Digital Content Creator',
+        title: 'Product Photographer',
         subTitle: 'Redlynx',
         duration: '07/2018 - 09/2018 ',
         description: 'Creating eye catching product photos of sunglasses',

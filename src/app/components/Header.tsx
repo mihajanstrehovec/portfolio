@@ -1,12 +1,13 @@
 'use client'
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import {
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
+import { useMousePosition } from "../hooks/useMousePosition"
 
 
 //@ts-ignore
@@ -14,7 +15,23 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({colorTheme}:{colorTheme: string}) {
+export default function Header({colorTheme, hamburger = true}:{colorTheme: string, hamburger?: boolean}) {
+
+    useEffect(()=>{
+        const headshot = document.getElementById("headshot")
+    }, [])
+    
+    const headshotPoses = {
+        "centerright": '/img/headshot-right.png',
+        "centerleft": '/img/headshot-left.png',
+        "top": '/img/headshot-top.png',
+        "topright": '/img/headshot-top-right.png',
+        "topleft": '/img/headshot-top-left.png',
+        "bottom": '/img/headshot-bottom.png',
+        "bottomright": '/img/headshot-bottom-right.png',
+        "bottomleft": '/img/headshot-bottom-left.png'
+    }
+
     const nav = [
         {title: 'experiences', link: '/experiences'},
         {title: 'education', link: '/education'},
@@ -23,10 +40,21 @@ export default function Header({colorTheme}:{colorTheme: string}) {
         {title: 'contact', link: '/contact'}
     ]
 
+    const position = useMousePosition()
+    //console.log("WOPAA", headshot?.getBoundingClientRect())
+
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return(
-        <div className="top-0 sticky z-10 bg-background overflow-hidden">
+        <div className="top-0 sticky z-10 bg-[#181818] overflow-hidden" data-theme={colorTheme}>
+            <div className="hidden sm:block top-5 right-5 absolute">
+                <a href="/MihaJanStrehovecCV.pdf" download="MihaJanStrehovecCV">
+                <svg width="26" height="25" viewBox="0 0 312 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M170 14.0637L170.064 1.06388L144.064 0.936432L144 13.9363L170 14.0637ZM156 218L231.692 88.3695L81.5826 87.6337L156 218ZM144 13.9363L143.574 100.938L169.573 101.065L170 14.0637L144 13.9363Z" fill="white" className=" fill-primary"/>
+                    <path fillRule="evenodd" clipRule="evenodd" d="M0 193V300H156H312V193H274.835V264.748H156H37.1648V193H0Z" fill="white" className=" fill-primary"/>
+                </svg>
+                </a>
+            </div>
             <div className="container mx-auto sm:pt-14 xl:max-w-[1280px]  " data-theme={colorTheme}>
                 <div className="flex sm:hidden justify-end sticky top-0">
                     <button
@@ -39,12 +67,17 @@ export default function Header({colorTheme}:{colorTheme: string}) {
                     </button>
                 </div>
                 <div className="grid md:flex md:h-[166px] w-full gap-0 sm:gap-4">
-                    <div className={`flex-none mx-auto relative w-[100px] h-[111px] -mt-6 mb-4 sm:mb-0 sm:mt-0  sm:w-[150px] sm:h-[166px] border-2 border-primary shadow-headshot shadow-primary bg-background `}>
-                        <Image src='/img/mihajanstrehovec.png' alt='Miha'  width={300} height={300} className="absolute bottom-0"/>
+                    <div id="headshot" className={`flex-none mx-auto relative w-[100px] h-[111px] -mt-6 mb-4 sm:mb-0 sm:mt-0  sm:w-[150px] sm:h-[166px] border-2 border-primary shadow-headshot shadow-primary bg-background `}>
+                        <Link href="/">
+                            <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`absolute bottom-0 brightness-90 left-[0.1px] sm:left-0
+                                ${position == "bottomright" ? 'bottom-[7px] sm:bottom-[11px] left-[9px] sm:left-[14px] scale-[1.19]' : ''} 
+                                ${position == "bottomleft" ? ' bottom-[7px] sm:bottom-[10px]  -left-[9px] sm:-left-[14.5px] scale-[1.19]' : ''}
+                            `}/>
+                        </Link>
                     </div>
                     <div className={`invisible sm:visible h-0 sm:h-10 md:h-full flex-1 md:border-2 border-primary relative bg-background`}>
                         <p className="p-4 invisible md:visible md:text-xs lg:text-sm xl:text-base">
-                            Hello {"{reader.name}"} my name is <span className=" text-titles">Miha Jan Strehovec</span> I’m a dynamic, multifaceted Multimedia Engineer, currently honing skills as a QA Engineer at Plume. At 24, my journey has been diverse and forward-thinking, shaped by experiences that range from web development, QA to digital media leadership. In my free time I like to tackle personal projects that derive from my ideas or the ideas of my friends. Through them I attain new skills that I can then apply in my professional life.
+                            Hello {"{reader.name}"} my name is <span className=" text-titles">Miha Jan Strehovec</span> I’m a dynamic, passionate Multimedia Engineer, currently honing skills as a QA Engineer at Plume. At 24, my journey has been diverse and forward-thinking, shaped by experiences that range from web development, QA to digital media leadership. In my free time I like to tackle personal projects that derive from my ideas or the ideas of my friends. Through them I attain new skills that I can then apply in my professional life.
                         </p>
                         <div className={`flex absolute bottom-0 w-full border-l-2 border-r-2 md:border-0 bg-secondary border-primary`}>
                             {nav.map((item) =>
@@ -83,10 +116,16 @@ export default function Header({colorTheme}:{colorTheme: string}) {
                                         className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-primary`}>
                                                 {item.title}
                                     </Link>
+                                    
                                 )}
+                                <a href="/MihaJanStrehovecCV.pdf" download="MihaJanStrehovecCV" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-primary">download CV</a>
+                                
+                                
                                 
                             </div>
+                            
                         </div>
+                        
                     </Dialog.Panel>
                 </Dialog>
                 

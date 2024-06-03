@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function ContactBox({ theme }:{ theme:string }){
 
     const contacts = [
@@ -18,8 +20,19 @@ export default function ContactBox({ theme }:{ theme:string }){
                         (contact)=>
                         <a key={contact.title} href={contact.link} target="_blank">
                             <div className="flex h-[200px] w-[220px] border-2 border-primary px-4 justify-center items-center text-center relative text-sm bg-background">
-                                
-                                    {contact.title}
+                                    {contact.title == 'miha.strehovec23@gmail.com' 
+                                        ? 
+                                        <>
+                                        <Image src={`/img/icons/email-contact.svg`} alt='Miha'  width={2250} height={1365} className="img-drop-shadow flex-none aspect-auto w-1/2"/>
+                                        
+                                        <div className="absolute bottom-2 right-3 text-sm text-gray-500">
+                                            {contact.title}
+                                        </div>
+                                        </>
+                                        :
+                                        <Image src={`/img/icons/${contact.title}-contact.svg`} alt='Miha'  width={2250} height={1365} className="img-drop-shadow flex-none aspect-auto w-1/2"/>
+                                    }
+                                    
                                 
                             </div>
                         </a>

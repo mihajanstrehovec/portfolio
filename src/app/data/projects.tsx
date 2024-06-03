@@ -377,7 +377,7 @@ const projects = [
         }
     },
     {
-        title: 'PKP - Project Creative path to practical knowledge',
+        title: 'Creative path to practical knowledge',
         subTitle: 'Digital production',
         duration: '07/2019',
         description: '',
