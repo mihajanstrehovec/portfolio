@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-export const useMousePosition = (headshot:any) => {
+export const useMousePosition = () => {
     const [position, setPosition] = useState("centerright")
 
     useEffect(()=>{

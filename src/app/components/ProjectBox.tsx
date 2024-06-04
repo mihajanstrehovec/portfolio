@@ -52,7 +52,9 @@ export default function ProjectBox({title, subTitle, duration, description, bull
                 <p className='text-titles font-semibold px-2'>PROJECT ROLE</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-3'></div>
                     <dl className="space-y-2 divide-y divide-gray-900/10 px-3 mb-8">
-                            {projectObject.projectContributions.contributions.map((contributions) =>
+                            {projectObject.projectContributions.contributions.map(
+                                //@ts-ignore
+                                (contributions) =>
                                 <Disclosure key={contributions.title} as="div" className="">
                                     {({ open }) => (
                                     <>
@@ -70,7 +72,9 @@ export default function ProjectBox({title, subTitle, duration, description, bull
                                         </dt>
                                         <Disclosure.Panel as="dd" className="mt-2 px-2 sm:px-0 sm:pr-12">
                                             <ul className='list-disc pl-3 sm:px-6  mb-8'>
-                                                {contributions.description.map((point, i)=>
+                                                {contributions.description.map(
+                                                    //@ts-ignore
+                                                    (point, i)=>
                                                 <li key={i}>
                                                     {point}
                                                 </li>
@@ -93,7 +97,9 @@ export default function ProjectBox({title, subTitle, duration, description, bull
                         <p className='text-titles font-semibold px-2'>KEY FEATURES</p>
                         <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
                         <ul className='list-disc px-2 pl-4 sm:pl-0 sm:px-6  mb-8'>
-                            {projectObject.keyFeaturesTechnologies.features.map((feature, i)=>
+                            {projectObject.keyFeaturesTechnologies.features.map(
+                                //@ts-ignore
+                                (feature, i)=>
                             <li key={i}>
                                 {feature}
                             </li>

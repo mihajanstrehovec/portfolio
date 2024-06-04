@@ -35,7 +35,9 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                 <p className='text-titles font-semibold px-2'>KEY RESPONSIBILITES</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-3'></div>
                 <dl className=" space-y-2 divide-y divide-gray-900/10 px-3 mb-8">
-                    {experienceObject.keyResponsibilities.responsibilities.map((responsibility) =>
+                    {experienceObject.keyResponsibilities.responsibilities.map(
+                        //@ts-ignore
+                        (responsibility) =>
                         <Disclosure key={responsibility.title} as="div" className="">
                             {({ open }) => (
                             <>
@@ -53,7 +55,9 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                                 </dt>
                                 <Disclosure.Panel as="dd" className="mt-2 sm:pr-12">
                                     <ul className='list-disc px-6  mb-8'>
-                                        {responsibility.bulletPoints.map((point, i)=>
+                                        {responsibility.bulletPoints.map(
+                                            //@ts-ignore
+                                            (point, i)=>
                                         <li key={i}>
                                             {point}
                                         </li>
@@ -70,7 +74,9 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                 <p className='text-titles font-semibold px-2'>TOOLS & TECHNOLOGIES</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
                 <ul className='list-disc px-7  mb-8'>
-                    {experienceObject.toolsTechnologies.description.map((tech, i)=>
+                    {experienceObject.toolsTechnologies.description.map(
+                        //@ts-ignore
+                        (tech, i)=>
                         <li key={i}>
                             {tech}
                         </li>
@@ -80,7 +86,9 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                 <p className='text-titles font-semibold px-2'>ACHIEVEMENTS & IMPACT</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
                 <ul className='list-disc px-6  mb-8'>
-                    {experienceObject.achievementsImpact.description.map((achievement, i)=>
+                    {experienceObject.achievementsImpact.description.map(
+                        //@ts-ignore
+                        (achievement, i)=>
                         <li key={i}>
                             {achievement}
                         </li>
@@ -91,7 +99,9 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                 <p className='text-titles font-semibold px-2'>COLABORATION & TEAMWORK</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
                 <ul className='list-disc px-6  mb-8'>
-                    {experienceObject.collaborationTeamwork.description.map((point, i)=>
+                    {experienceObject.collaborationTeamwork.description.map(
+                        //@ts-ignore
+                        (point, i)=>
                         <li key={i}>
                             {point}
                         </li>
@@ -102,7 +112,9 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                 <p className='text-titles font-semibold px-2'>CHALLENGES & SOLUTIONS</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
                 <ul className='list-disc px-6  mb-8'>
-                    {experienceObject.challengesSolutions.description.map((challenge, i)=>
+                    {experienceObject.challengesSolutions.description.map(
+                        //@ts-ignore
+                        (challenge, i)=>
                             <li key={i}>
                                 {challenge}
                             </li>
@@ -112,7 +124,9 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                 <p className='text-titles font-semibold px-2'>PROFESSIONAL DEVELOPMENT</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
                 <ul className='list-disc px-6  mb-14'>
-                    {experienceObject.professionalDevelopment.description.map((point, i)=>
+                    {experienceObject.professionalDevelopment.description.map(
+                        //@ts-ignore
+                        (point, i)=>
                         <li key={i}>
                             {point}
                         </li>
