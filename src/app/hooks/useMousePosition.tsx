@@ -2,7 +2,25 @@ import { useEffect, useState } from "react";
 
 
 export const useMousePosition = () => {
-    const [position, setPosition] = useState("centerright")
+
+    const headshotPoses = {
+        "centerright": '/img/headshot-right.png',
+        "centerleft": '/img/headshot-left.png',
+        "top": '/img/headshot-top.png',
+        "topright": '/img/headshot-top-right.png',
+        "topleft": '/img/headshot-top-left.png',
+        "bottom": '/img/headshot-bottom.png',
+        "bottomright": '/img/headshot-bottom-right.png',
+        "bottomleft": '/img/headshot-bottom-left.png'
+    }
+
+    type HeadshotPosition = keyof typeof headshotPoses;
+
+    interface ImageProps {
+        position: HeadshotPosition;
+      }
+
+    const [position, setPosition] = useState<HeadshotPosition>("centerright")
 
     useEffect(()=>{
         const headshot = document.getElementById("headshot")

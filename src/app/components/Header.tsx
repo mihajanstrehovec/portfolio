@@ -32,6 +32,12 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
         "bottomleft": '/img/headshot-bottom-left.png'
     }
 
+    type HeadshotPosition = keyof typeof headshotPoses;
+
+    interface ImageProps {
+        position: HeadshotPosition;
+      }
+
     const nav = [
         {title: 'experiences', link: '/experiences'},
         {title: 'education', link: '/education'},
@@ -40,7 +46,7 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
         {title: 'contact', link: '/contact'}
     ]
 
-    const position = useMousePosition()
+    const position:HeadshotPosition = useMousePosition()
     //console.log("WOPAA", headshot?.getBoundingClientRect())
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
