@@ -7,7 +7,7 @@ import experiences from "../data/experiences";
 import ContentBox from "./ContentBox";
 import CarouselContentBox from "./CarouselContentBox";
 
-export default function CarouselPreview({data, initSlide, section}:{data:any, initSlide: Number, section: string}) {
+export default function CarouselPreview({data, initSlide, section}:{data:any, initSlide: number, section: string}) {
   const settings = {
     dots: false,
     infinite: true,
