@@ -11,7 +11,8 @@ export const useMousePosition = () => {
         "topleft": '/img/headshot-top-left.png',
         "bottom": '/img/headshot-bottom.png',
         "bottomright": '/img/headshot-bottom-right.png',
-        "bottomleft": '/img/headshot-bottom-left.png'
+        "bottomleft": '/img/headshot-bottom-left.png',
+        "center": '/img/headshot-center.png'
     }
 
     type HeadshotPosition = keyof typeof headshotPoses;
@@ -28,7 +29,21 @@ export const useMousePosition = () => {
         //@ts-ignore
         const setFromEvent = (e) => {
             if(headShotPosition){
-                if(((headShotPosition.y + headShotPosition.height) - e.clientY) > 0){
+
+                let headshotEndY = headShotPosition.y + headShotPosition.height
+                let headshotEndX = headShotPosition.x + headShotPosition.width
+                let headshotMiddleX = headShotPosition.x + headShotPosition.width/2
+
+                if(e.clientX >= headShotPosition.x && e.clientX <= headshotEndX){
+                    if(e.clientY >= headShotPosition.y && e.clientY <= headshotEndY){
+                        setPosition("center")
+                    } else if(e.clientY <=  headShotPosition.y){
+                        setPosition("top")
+                    } else {
+                        setPosition("bottom")
+                    }
+                    
+                } else if(((headShotPosition.y + headShotPosition.height) - e.clientY) > 0){
                     if(e.clientY >= headShotPosition.y && e.clientY <= (headShotPosition.y + headShotPosition.height)){
                         if(((headShotPosition.x + headShotPosition.width/2) - e.clientX) > 0){
                             setPosition("centerleft")

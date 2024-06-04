@@ -3,8 +3,8 @@ import Image from "next/image"
 export default function ContactBox({ theme }:{ theme:string }){
 
     const contacts = [
-        {title: 'LinkedIn', link: 'https://www.linkedin.com/in/miha-jan-strehovec-0802a815b/'},
-        {title: 'GitHub', link: 'https://github.com/mihajanstrehovec'},
+        {title: 'linkedin', link: 'https://www.linkedin.com/in/miha-jan-strehovec-0802a815b/'},
+        {title: 'github', link: 'https://github.com/mihajanstrehovec'},
         {title: 'miha.strehovec23@gmail.com', link: 'mailto:miha.strehovec23@gmail.com'}
     ]
 

@@ -19,7 +19,6 @@ export default function Home({params}) {
 
             <CarouselPreview data={experiences} initSlide={Number(params.experienceId)+1} section="experiences"/>
         </div>
-        <Footer/>
 
         
         

@@ -22,14 +22,15 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
     }, [])
     
     const headshotPoses = {
-        "centerright": '/img/headshot-right.png',
-        "centerleft": '/img/headshot-left.png',
-        "top": '/img/headshot-top.png',
-        "topright": '/img/headshot-top-right.png',
-        "topleft": '/img/headshot-top-left.png',
-        "bottom": '/img/headshot-bottom.png',
-        "bottomright": '/img/headshot-bottom-right.png',
-        "bottomleft": '/img/headshot-bottom-left.png'
+        "centerright": '/img/hs/headshot-right.png',
+        "centerleft": '/img/hs/headshot-left.png',
+        "top": '/img/hs/headshot-top.png',
+        "topright": '/img/hs/headshot-top-right.png',
+        "topleft": '/img/hs/headshot-top-left.png',
+        "bottom": '/img/hs/headshot-bottom.png',
+        "bottomright": '/img/hs/headshot-bottom-right.png',
+        "bottomleft": '/img/hs/headshot-bottom-left.png',
+        "center": '/img/hs/headshot-center.png'
     }
 
     type HeadshotPosition = keyof typeof headshotPoses;
@@ -75,10 +76,13 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
                 <div className="grid md:flex md:h-[166px] w-full gap-0 sm:gap-4">
                     <div id="headshot" className={`flex-none mx-auto relative w-[100px] h-[111px] -mt-6 mb-4 sm:mb-0 sm:mt-0  sm:w-[150px] sm:h-[166px] border-2 border-primary shadow-headshot shadow-primary bg-background `}>
                         <Link href="/">
-                            <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`absolute bottom-0 brightness-90 left-[0.1px] sm:left-0
+                            <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`absolute scale-[1.07] bottom-[1px] brightness-90 left-[0.1px] sm:left-0
+                               
+                            `}/>
+                            {/* <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`absolute bottom-0 brightness-90 left-[0.1px] sm:left-0
                                 ${position == "bottomright" ? 'bottom-[7px] sm:bottom-[11px] left-[9px] sm:left-[14px] scale-[1.19]' : ''} 
                                 ${position == "bottomleft" ? ' bottom-[7px] sm:bottom-[10px]  -left-[9px] sm:-left-[14.5px] scale-[1.19]' : ''}
-                            `}/>
+                            `}/> */}
                         </Link>
                     </div>
                     <div className={`invisible sm:visible h-0 sm:h-10 md:h-full flex-1 md:border-2 border-primary relative bg-background`}>

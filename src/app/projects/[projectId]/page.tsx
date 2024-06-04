@@ -8,7 +8,7 @@ import Footer from "@/app/components/Footer";
 export default function Home({params}) {
 
     return (
-      <div className="">
+      <div className="min-h-[100vh]">
         <Header colorTheme="projects"/>
         <div className="flex flex-wrap columns-2 px-3 sm:px-0 sm:w-4/5 mx-auto gap-16 max-w-[1140px] justify-center sm:mt-10 mb-14">
           <ProjectBox 
@@ -20,7 +20,7 @@ export default function Home({params}) {
             
             <CarouselPreview data={projects} initSlide={Number(params.projectId)+1} section="projects"/>
         </div>
-        <Footer/>
+    
       </div> 
     ); 
 }
