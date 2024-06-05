@@ -9,7 +9,8 @@ const experiences = [
             'Tested and validated features (network, mobile app, website)',
             'Developed test automation scripts for efficiency and accuracy',
             'Managed Git repository for CxT scripts',
-            'Provided actionable feedback to developers'
+            'Provided actionable feedback to developers',
+            'Click to continue reading...'
         ],
         roleOverview: {
             title: 'ROLE OVERVIEW',
@@ -97,6 +98,7 @@ const experiences = [
             'Developed prototype using React, NextJS, Firebase, and Stripe (SPA)',
             'Implemented data posting solution to AJPES, optimizing functionality',
             'Built MVP landing page with React, NextJS, and Tailwind',
+            'Click to continue reading...'
         ],
         roleOverview: {
             title: "ROLE OVERVIEW",
@@ -180,7 +182,8 @@ const experiences = [
             'Wrote Python script to automate ticket creation, saving organizer time',
             'Built Android app for ticket validation',
             'Developed ticket management interface in Google Sheets for streamlined event analytics',
-            'Tested app across various devices and conditions'
+            'Tested app across various devices and conditions',
+            'Click to continue reading...'
         ],
         roleOverview: {
             title: "ROLE OVERVIEW",
@@ -266,7 +269,8 @@ const experiences = [
             'Built WordPress website showcasing events',
             'Developed custom WordPress plugin for QR code discounts',
             'Created mailing campaign reaching 200+ users',
-            'Boosted event attendance and insight by 20%'
+            'Boosted event attendance and insight by 20%',
+            'Click to continue reading...'
         ],
         roleOverview: {
             title: "ROLE OVERVIEW",
@@ -352,7 +356,8 @@ const experiences = [
             'Built WordPress website showcasing products',
             'Conducted product photography',
             'Produced promotional photography',
-            'Created product advertisement videos'
+            'Created product advertisement videos',
+            'Click to continue reading...'
         ],
         roleOverview: {
             title: "ROLE OVERVIEW",
@@ -431,6 +436,7 @@ const experiences = [
             'Made concepts and hired a model',
             'Multiple photoshoots',
             'Editing in Photoshop and Lightroom',
+            
         ]
     },
     {

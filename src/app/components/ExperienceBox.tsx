@@ -53,7 +53,7 @@ export default function ExperienceBox({title, subTitle, duration, description, b
                                     </span>
                                 </Disclosure.Button>
                                 </dt>
-                                <Disclosure.Panel as="dd" className="mt-2 sm:pr-12">
+                                <Disclosure.Panel as="dd" className="mt-2 lg:pr-8 xl:pr-12">
                                     <ul className='list-disc px-6  mb-8'>
                                         {responsibility.bulletPoints.map(
                                             //@ts-ignore

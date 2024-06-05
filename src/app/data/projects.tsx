@@ -9,7 +9,8 @@ const projects = [
             'Google sheets for data storage and manipulation',
             'Report expenses',
             'Generate reports (daily, weekly, monhtly)',
-            'Automated reporting'
+            'Automated reporting',
+            'Click to continue reading...'
         ],
         overview: {
             title: "OVERVIEW",
@@ -121,7 +122,8 @@ const projects = [
             'Developed in PHP',
             'Website designed in Adobe Illustrator',
             'Deployed on Heroku',
-            'Data storage implemented with clearDB'
+            'Data storage implemented with clearDB',
+            'Click to continue reading...'
         ],
         overview: {
             title: "OVERVIEW",
@@ -237,7 +239,8 @@ const projects = [
             'Data storage implemented with MongoDB',
             'Collaborated with 2 other students',
             'Online platform for gaming events',
-            'Deployed on Heroku'
+            'Deployed on Heroku',
+            'Click to continue reading...'
         ],
         projectName: "Frigre (University Gaming Platform Web App)",
         overview: {
@@ -384,7 +387,8 @@ const projects = [
         bulletPoints: [
             'Created an informational flyer for special dogs',
             'Collaborated with professors from Faculty of Electrical Engineering and Veterinary Faculty',
-            'Created animations used to represent surgery on a dog used in a national TV segment'
+            'Created animations used to represent surgery on a dog used in a national TV segment',
+            'Click to continue reading...'
         ],
         overview: {
             title: "OVERVIEW",
@@ -461,7 +465,8 @@ const projects = [
             'Understanding customers demands',
             'Coordinating photoshoots at the event',
             'Photo editing',
-            'Video editing'
+            'Video editing',
+            'Click to continue reading...'
         ],
         overview: {
             title: "OVERVIEW",
@@ -533,7 +538,8 @@ const projects = [
             'Writing script',
             'Building sets with Legos',
             'Stop motion photography',
-            'Video editing'
+            'Video editing',
+            'Click to continue reading...'
         ],
         overview: {
             title: "OVERVIEW",

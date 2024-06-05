@@ -62,7 +62,7 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
                 </svg>
                 </a>
             </div>
-            <div className="container mx-auto sm:pt-14 xl:max-w-[1280px]  " data-theme={colorTheme}>
+            <div className="container mx-auto sm:pt-14 lg:px-6 xl:px-0 xl:max-w-[1280px]  " data-theme={colorTheme}>
                 <div className="flex sm:hidden justify-end sticky top-0">
                     <button
                         type="button"

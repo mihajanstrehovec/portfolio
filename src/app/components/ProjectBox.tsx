@@ -29,26 +29,22 @@ export default function ProjectBox({title, subTitle, duration, description, bull
                     </p>
                 </div>
             </div>
-            {/* <div className='flex justify-end px-6 pt-4 pb-2'>
-                <div className='text-sm text-subtleText align-bottom'>
-                    {duration}
-                </div>
-            </div> */}
-            <div className='px-4 sm:px-0 sm:w-fit sm:ml-[calc(12.5%)] sm:h-[450px] mt-4 sm:mt-6 mb-8'>
-                <div className='sm:flex sm:justify-between sm:absolute w-[100%] items-center'>
-                    <div className='sm:w-[500px]'>
+
+            <div className='px-4 xl:px-0 xl:w-fit xl:ml-[calc(12.5%)] xl:h-[450px] mt-4 sm:mt-6 mb-8'>
+                <div className='xl:flex xl:justify-between xl:absolute w-[100%] items-center'>
+                    <div className='xl:w-[500px]'>
                         <p className='text-titles font-semibold px-2'>DESCRIPTION</p>
                         <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
                         <p className='px-3 mb-8'>{projectObject.overview.description}</p>
                     </div>
                     
-                    <div className='justify-center sm:w-[750px] sm:h-[455px] flex items-center opacity-70'>
+                    <div className='justify-center xl:w-[750px] xl:h-[455px] flex items-center opacity-70'>
                         <Image src={projectObject.image[0]} alt='Miha'  width={2250} height={1365} className="img-drop-shadow flex-none aspect-auto w-[750px] "/>
                     </div>
                 </div>
             </div>
 
-            <div className='px-4 sm:px-0 sm:w-3/4 mx-auto sm:mb-12'>
+            <div className='px-4 xl:px-0 xl:w-3/4 mx-auto xl:mb-12'>
                 <p className='text-titles font-semibold px-2'>PROJECT ROLE</p>
                 <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-3'></div>
                     <dl className="space-y-2 divide-y divide-gray-900/10 px-3 mb-8">
@@ -70,7 +66,7 @@ export default function ProjectBox({title, subTitle, duration, description, bull
                                             </span>
                                         </Disclosure.Button>
                                         </dt>
-                                        <Disclosure.Panel as="dd" className="mt-2 px-2 sm:px-0 sm:pr-12">
+                                        <Disclosure.Panel as="dd" className="mt-2 px-2 xl:px-0 sm:pr-12">
                                             <ul className='list-disc pl-3 sm:px-6  mb-8'>
                                                 {contributions.description.map(
                                                     //@ts-ignore
@@ -88,15 +84,15 @@ export default function ProjectBox({title, subTitle, duration, description, bull
                     </dl>
             </div>
 
-            <div className='px-4 sm:px-0 w-fit sm:-ml-[calc(12.5%)] sm:h-[450px] mb-8'>
-                <div className='sm:flex justify-between sm:absolute w-[100%]  items-center'>
-                    <div className='sm:w-[750px] sm:h-[455px] flex items-center opacity-70 '>
+            <div className='px-4 xl:px-0 w-fit xl:-ml-[calc(12.5%)] xl:h-[450px] mb-8'>
+                <div className='xl:flex justify-between xl:absolute w-[100%]  items-center'>
+                    <div className='xl:w-[750px] xl:h-[455px] flex items-center opacity-70 '>
                         <Image src={projectObject.image[1]} alt='Miha'  width={2250} height={1365} className="img-drop-shadow flex-none aspect-auto w-[750px]"/>
                     </div>
-                    <div className='mt-8 sm:mt-0 sm:w-[500px]'>
+                    <div className='mt-8 xl:mt-0 xl:w-[500px]'>
                         <p className='text-titles font-semibold px-2'>KEY FEATURES</p>
                         <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>
-                        <ul className='list-disc px-2 pl-4 sm:pl-0 sm:px-6  mb-8'>
+                        <ul className='list-disc px-2 pl-4 lg:pl-6 xl:pl-0  xl:px-6  mb-8'>
                             {projectObject.keyFeaturesTechnologies.features.map(
                                 //@ts-ignore
                                 (feature, i)=>
