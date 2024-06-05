@@ -17,11 +17,8 @@ export default function Home({params}) {
             experienceObject={experiences[Number(params.experienceId)]}
           />
 
-            <CarouselPreview data={experiences} initSlide={Number(params.experienceId)+1} section="experiences"/>
+            <CarouselPreview data={experiences.slice(0,-2)} initSlide={Number(params.experienceId)+1} section="experiences"/>
         </div>
-
-        
-        
       </> 
     ); 
 }
