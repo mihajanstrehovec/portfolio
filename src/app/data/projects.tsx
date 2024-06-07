@@ -14,11 +14,11 @@ const projects = [
         ],
         overview: {
             title: "OVERVIEW",
-            description: (<>I've tried out multiple personal finance apps and I didn't manage to stick with any of them. The <span className=" text-titles">user flow was clunky</span> and before I knew it the app that 
+            description: (<>I&apos;ve tried out multiple personal finance apps and I didn&apos;t manage to stick with any of them. The <span className=" text-titles">user flow was clunky</span> and before I knew it the app that 
             was trying to save me money, was costing me 2.99€ per month to collect digital dust. For that reason I joined forces with my colleague who has already started the development 
             (hoping that I will stick with something that developed).<br></br><br></br> Over the weekend I developed a  <span className=" text-titles">Telegram bot</span> that interacts with 
             <span className=" text-titles">Google Sheets</span> to help me report and manage my expenses. Communication between the bot and Google sheets is handled with a  <span className=" text-titles">Google script</span>, 
-            that based on the users input executes a task. For example generating a weekly report can be done by sending the keyword "weekly" and the script sends the user a  <span className=" text-titles">text report</span>,
+            that based on the users input executes a task. For example generating a weekly report can be done by sending the keyword &ldquo;weekly&ldquo; and the script sends the user a  <span className=" text-titles">text report</span>,
             a Pie chart representing  <span className=" text-titles">expense categories</span> and a line chart for  <span className=" text-titles">daily spendings</span>.</>)
         },
         rolesFunctionalities: {
