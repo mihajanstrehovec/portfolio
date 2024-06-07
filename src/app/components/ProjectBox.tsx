@@ -31,7 +31,7 @@ export default function ProjectBox({title, subTitle, duration, description, bull
             </div>
 
             <div className='px-4 xl:px-0 xl:w-fit xl:ml-[calc(12.5%)] xl:h-[450px] mt-4 sm:mt-6 mb-8'>
-                <div className='xl:flex xl:justify-between xl:absolute w-[100%] items-center'>
+                <div className='xl:flex xl:justify-between  w-[100%] items-center'>
                     <div className='xl:w-[500px]'>
                         <p className='text-titles font-semibold px-2'>DESCRIPTION</p>
                         <div className=' bg-primary h-[3px] w-full mx-auto mt-1 mb-2'></div>

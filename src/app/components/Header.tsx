@@ -53,7 +53,7 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return(
-        <div className="top-0 sticky z-10 bg-[#181818] overflow-hidden" data-theme={colorTheme}>
+        <div className="top-0 sticky z-10 bg-[#181818] " data-theme={colorTheme}>
             <div className="hidden sm:block top-5 right-5 absolute">
                 <a href="/MihaJanStrehovecCV.pdf" download="MihaJanStrehovecCV">
                 <svg width="26" height="25" viewBox="0 0 312 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
                 <div className="grid md:flex md:h-[166px] w-full gap-0 sm:gap-4">
                     <div id="headshot" className={`flex-none mx-auto relative w-[100px] h-[111px] -mt-6 mb-4 sm:mb-0 sm:mt-0  sm:w-[150px] sm:h-[166px] border-2 border-primary shadow-headshot shadow-primary bg-background `}>
                         <Link href="/">
-                            <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`absolute scale-[1.07] bottom-[1px] brightness-90 left-[0.1px] sm:left-0
+                            <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`z-10 absolute scale-[1.07] bottom-[1px] brightness-90 left-[0.1px] sm:left-0
                                
                             `}/>
                             {/* <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`absolute bottom-0 brightness-90 left-[0.1px] sm:left-0
@@ -139,6 +139,9 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
                     </Dialog.Panel>
                 </Dialog>
                 
+            </div>
+            <div className="hidden sm:block w-full h-[35px] absolute" id="header-fade">
+
             </div>
         </div>
     )

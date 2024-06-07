@@ -14,7 +14,12 @@ const projects = [
         ],
         overview: {
             title: "OVERVIEW",
-            description: "I've tried out multiple personal finance apps and I didn't manage to stick with any of them. The user flow was clunky and before I knew it the app that was trying to save me money, was costing me 2.99€ per month to collect digital dust. For that reason joined forces with my colleague who has already started the development (hoping that I will stick with something that I've helped make). Over the weekend I developed a Telegram bot that interacts with Google Sheets to help users report and manage their expenses. Communication between the bot and Google sheets is handled with a Google script, that based on the users input executes a task, like generating a weekly report that sends the user a text report as well as a Pie chart representing categories and a line chart for daily spendings."
+            description: (<>I've tried out multiple personal finance apps and I didn't manage to stick with any of them. The <span className=" text-titles">user flow was clunky</span> and before I knew it the app that 
+            was trying to save me money, was costing me 2.99€ per month to collect digital dust. For that reason I joined forces with my colleague who has already started the development 
+            (hoping that I will stick with something that developed).<br></br><br></br> Over the weekend I developed a  <span className=" text-titles">Telegram bot</span> that interacts with 
+            <span className=" text-titles">Google Sheets</span> to help me report and manage my expenses. Communication between the bot and Google sheets is handled with a  <span className=" text-titles">Google script</span>, 
+            that based on the users input executes a task. For example generating a weekly report can be done by sending the keyword "weekly" and the script sends the user a  <span className=" text-titles">text report</span>,
+            a Pie chart representing  <span className=" text-titles">expense categories</span> and a line chart for  <span className=" text-titles">daily spendings</span>.</>)
         },
         rolesFunctionalities: {
             title: "ROLES AND FUNCTIONALITIES",
@@ -127,7 +132,13 @@ const projects = [
         ],
         overview: {
             title: "OVERVIEW",
-            description: (<>This was a college seminar assignment part of the subject e-commerce at FRI where we were tasked with creating a web shop using PHP and MySQL. <br></br>I paired up with two of my colleagues and took the initiative by creating the website wireframes and UX in Figma. Before we started with the development I set up our local environments for PHP using LAMP, which was a first for me. We also asked our selves questions like, what are the users types of users will be on the website (admin, customer, seller) and what their roles will be.<br></br> After we had a full picture of the project we started coding, it was one of my first time working with MVC architecture so it took some time getting used, same goes for PHP. But at the end we had a fully functioning e-commerce store for sweet tooths that only needs a payment system integration to work (something like Stripe).</>)
+            description: (<>This was a college seminar assignment part of the subject  <span className=" text-titles">e-commerce</span> at FRI where we were tasked with creating a web shop using 
+            <span className=" text-titles">PHP</span> and <span className=" text-titles">MySQL</span>. <br></br><br></br>I paired up with two of my classmates and took the initiative by creating the website 
+            <span className=" text-titles">wireframes</span> and <span className=" text-titles">UI</span> in Figma. Before we started with the development I set up our local environments for PHP using 
+            <span className=" text-titles">LAMP</span>, which was a first for me. We also had to ask, what are the <span className=" text-titles">user roles</span> our web shop needs to support (admin, customer, seller) 
+            and what kind of access they have.<br></br><br></br> After we had a full picture of the project we started coding, it was one of my first time working with <span className=" text-titles">MVC</span> 
+            architecture so it took some time getting used, same goes for PHP. But at the end we had a <span className=" text-titles">fully functioning e-commerce</span> store for sweet tooths that only needs a 
+            payment system integration to work (something like Stripe).</>)
         },
         rolesFunctionalities: {
             title: "ROLES AND FUNCTIONALITIES",
@@ -245,7 +256,10 @@ const projects = [
         projectName: "Frigre (University Gaming Platform Web App)",
         overview: {
             title: "OVERVIEW",
-            description: (<>Frigre is a university gaming platform web application developed using Angular and MongoDB. The project, which was a collaborative effort with two college classmates, spans six months and was designed to host gaming events for students of the university. <br></br> Students can sign up to tournaments, create thier own teams, view the leaderboards select their game of choice and create tournaments. The application includes user authentication via JWT and is deployed on Heroku. It also features Progressive Web App (PWA) capabilities and comprehensive documentation with Swagger.</>)
+            description: (<>Frigre is a hub for <span className=" text-titles">all e-sports and gaming</span> needs for all students of University of Ljubljana. The project was a collaborative effort with two college classmates, spanned six months 
+            and was designed to host gaming events for students of the university. <br></br><br></br> The web app was developed with Angular   <br></br><br></br> Students can <span className=" text-titles">sign up</span> to <span className=" text-titles">tournaments</span>, <span className=" text-titles">create</span> thier own <span className=" text-titles">teams</span>, view the leaderboards select their game of choice and create 
+            tournaments. The application includes user authentication via JWT and is deployed on Heroku. It also features Progressive Web App (PWA) capabilities, a Discord bot allowing users to chat directly from the website
+            and a comprehensive documentation with Swagger.</>)
         },
         rolesFunctionalities: {
             title: "ROLES AND FUNCTIONALITIES",
