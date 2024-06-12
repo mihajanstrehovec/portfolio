@@ -79,13 +79,10 @@ export default function Header({colorTheme, hamburger = true}:{colorTheme: strin
                             <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`z-10 absolute scale-[1.07] bottom-[1px] brightness-90 left-[0.1px] sm:left-0
                                
                             `}/>
-                            {/* <Image src={headshotPoses[position]} alt='Miha'  width={300} height={300} className={`absolute bottom-0 brightness-90 left-[0.1px] sm:left-0
-                                ${position == "bottomright" ? 'bottom-[7px] sm:bottom-[11px] left-[9px] sm:left-[14px] scale-[1.19]' : ''} 
-                                ${position == "bottomleft" ? ' bottom-[7px] sm:bottom-[10px]  -left-[9px] sm:-left-[14.5px] scale-[1.19]' : ''}
-                            `}/> */}
+                        
                         </Link>
                     </div>
-                    <div className={`invisible sm:visible h-0 sm:h-10 md:h-full flex-1 md:border-2 border-primary relative bg-background`}>
+                    <div className={`hidden sm:block h-0 sm:h-10 md:h-full flex-1 md:border-2 border-primary relative bg-background`}>
                         <p className="p-4 invisible md:visible md:text-xs lg:text-sm xl:text-base">
                             Hello {"{reader.name}"} my name is <span className=" text-titles">Miha Jan Strehovec</span> I’m a dynamic, passionate Multimedia Engineer, currently honing skills as a QA Engineer at Plume. At 24, my journey has been diverse and forward-thinking, shaped by experiences that range from web development, QA to digital media leadership. In my free time I like to tackle personal projects that derive from my ideas or the ideas of my friends. Through them I attain new skills that I can then apply in my professional life.
                         </p>
