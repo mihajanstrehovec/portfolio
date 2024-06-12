@@ -66,9 +66,9 @@ body {
 }
 
 [data-theme="education"] {
-  --color-primary: #974499;
+  --color-primary: #783679;
   --color-secondary: #351D35;
-  --color-titles: #8E37AD;
+  --color-titles: #a23dc6;
 }
 
 [data-theme="projects"] {

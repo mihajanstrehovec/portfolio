@@ -14,9 +14,9 @@ export default function Home() {
               <a href={`/projects/${id}`}>
                 <ContentBox 
                   title={project.title}
-                  subTitle={project.subTitle}
+                  subTitle=""
                   duration=""
-                  description={project.description}
+                  description={project.subTitle}
                   bulletPoints={project.bulletPoints}/>
               </a>
             </div> 

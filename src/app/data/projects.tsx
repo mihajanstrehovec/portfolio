@@ -258,8 +258,8 @@ const projects = [
             title: "OVERVIEW",
             description: (<>Frigre is a hub for <span className=" text-titles">all e-sports and gaming</span> needs for all students of University of Ljubljana. The project was a collaborative effort with two college classmates, spanned six months 
             and was designed to host gaming events for students of the university. <br></br><br></br> The web app was developed with Angular   <br></br><br></br> Students can <span className=" text-titles">sign up</span> to <span className=" text-titles">tournaments</span>, <span className=" text-titles">create</span> thier own <span className=" text-titles">teams</span>, view the leaderboards select their game of choice and create 
-            tournaments. The application includes user authentication via JWT and is deployed on Heroku. It also features Progressive Web App (PWA) capabilities, a Discord bot allowing users to chat directly from the website
-            and a comprehensive documentation with Swagger.</>)
+            tournaments. The application includes user authentication via <span className=" text-titles">JWT</span> and is deployed on <span className=" text-titles">Heroku</span>. It also features <span className=" text-titles">Progressive Web App</span> (PWA) capabilities, a <span className=" text-titles">Discord bot</span> allowing users to chat directly from the website
+            and a comprehensive documentation with<span className=" text-titles"> Swagger</span>.</>)
         },
         rolesFunctionalities: {
             title: "ROLES AND FUNCTIONALITIES",
@@ -399,14 +399,19 @@ const projects = [
         duration: '07/2019',
         description: '',
         bulletPoints: [
-            'Created an informational flyer for special dogs',
+            'Made an informational flyer for special dogs',
             'Collaborated with professors from Faculty of Electrical Engineering and Veterinary Faculty',
             'Created animations used to represent surgery on a dog used in a national TV segment',
             'Click to continue reading...'
         ],
         overview: {
             title: "OVERVIEW",
-            description: (<>The PKP project, titled Knowledge for the Health and Well-being of Brachycephalic Dogs, focused on digital production to create educational and informational content for veterinary purposes. The project involved collaboration with professors from the Faculty of Electrical Engineering and the Veterinary Faculty.<br></br> For this project I created digital content as per professors requests, where I had to understand the veterinary procedures and translate those into educational animations. Visualizing data was also a big part of this project as I was in charge of showcasing results of the professors research.  I also created a flyer that the university used to make the public more aware of the problems.</>)
+            description: (<>The PKP project, titled Knowledge for the Health and Well-being of Brachycephalic Dogs, focused on educational and informational content for veterinary purposes. 
+            It was hosted by the <span className=" text-titles">Veterinary Medicine faculty</span> and they needed someone to handle the <span className=" text-titles">digtial production</span>, this is where me and my colleague from Multimedia came in to play. 
+            <br></br><br></br>  For this project I <span className=" text-titles">collaborated with professors</span> from both colleges and made digital content as per professors requests. I had to <span className=" text-titles">understand the veterinary procedures</span> and translate those into educational animations. 
+            This also took a lot of <span className=" text-titles">consultations</span> with the professors as their feedback was crucial for the best execution possible.
+            <span className=" text-titles">Visualizing data</span> was also a big part of this project as I was in charge of showcasing results of the professors research through graphs, animations, charts, etc. I also designed a <span className=" text-titles">flyer</span> that the university used to make the public
+            more aware of the problems.</>)
         },
         
         projectContributions: {
@@ -557,7 +562,12 @@ const projects = [
         ],
         overview: {
             title: "OVERVIEW",
-            description: (<>During my time at Srednja medijska in grafična šola Ljubljana I colaborated with a group of students to create a <span className=" text-titles">stop motion short movie</span> for one of the subjects. We first decided to use LEGO bricks for the materials and started with the script. Each member contributed their ideas and I put together the final script with as many suggestions as possible. We then made a story board to help us visualize the final project, this was very helpfull as it was easier to do scenography later on. <br/><br/>This was our next task, building the sets and off we went taking photos of each frame of the animation. It was a long and exhausting process as we had to be meticulous about every little thing. Along with the process of shooting I started editing the movie with the pictures we already had, I took care of the sound design, voice over, compositing, editing and all the other post production elements. Thankfully the hard work paid off as we got invited to <span className=" text-titles"> Enimation </span> a short film festival.</>)
+            description: (<>During my time at Srednja medijska in grafična šola Ljubljana I colaborated with a group of students to create a <span className=" text-titles">stop motion short movie</span> 
+            for one of the subjects. We first decided to use LEGO bricks for the materials and started with the script. Each member <span className=" text-titles">contributed their ideas</span> and I put together
+            the final script with as many suggestions as possible. We then made a <span className=" text-titles">story board</span> to help us <span className=" text-titles">visualize</span> the final project, this was very helpfull as it was easier to tackle scenography later on. 
+            <br/><br/>This was our next task, building the sets and off we went taking photos frame by frame. It was a long and exhausting process as we had to be meticulous about every little thing. Along with the process of 
+            shooting I started <span className=" text-titles">editing</span> the animation with the pictures we already had, I took care of the <span className=" text-titles">sound design, voice over, compositing, editing</span> and all the other post production elements. 
+            Thankfully the hard work paid off as we got invited to <span className=" text-titles"> Enimation </span> a short film festival.</>)
         },
         
         projectContributions: {
