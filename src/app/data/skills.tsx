@@ -14,12 +14,16 @@ const skills = [
     {
         title: 'Certifications',
         skills: [
-            {title: 'Programming Foundations: Software Testing/QA', note: 'Linkedin'},
-            {title: 'Advanced Python Course', note: 'Plume'},
-            {title: 'Learn Intermediate JavaScript', note: 'Codecademy'},
-            {title: 'Learn TypeScript: Fundamentals', note: 'Codecademy'},
-            {title: 'Learn TypeScript: Functions', note: 'Codecademy'},
-            {title: 'Customer Experience (CX) Strategy: How to Design an Organizational Approach', note: 'Linkedin'}
+            {title: 'Advanced Python Course', note: 'Plume', img: '/img/certificates/advanced-python.jpg', link:'advanced-python.pdf'},
+            {title: 'Introduction to Cloud Computing', note: 'Coursera/IBM', img: '/img/certificates/cloud-computing.jpg', link:'https://coursera.org/verify/8JYFGGJHHZM2'},
+            {title: 'Developing Front-End Apps with React', note: 'Coursera/IBM', img: '/img/certificates/fe-react.jpg', link:'https://coursera.org/verify/YBBSEVHUG8CT'},
+            {title: 'Getting Started with Git and GitHub', note: 'Coursera/IBM', img: '/img/certificates/git-github.jpg', link:'https://coursera.org/verify/QL2TVQK5LAUF'},
+            {title: 'Introduction to Web Development with HTML, CSS, JavaScript', note: 'Coursera/IBM', img: '/img/certificates/html-css-js.jpg', link:'https://coursera.org/verify/92LGGJRGN59P'},
+            {title: 'Developing Back-End Apps with Node.js and Express', note: 'Coursera/IBM', img: '/img/certificates/node-express.jpg', link:'https://coursera.org/verify/J9WGLYRKVRS4'},
+            {title: 'Learn TypeScript: Fundamentals', note: 'Codecademy', img: '/img/certificates/typescript-fundamentals.jpg', link:"Miha235's profile _ Codecademy_TS-fundamentals.pdf"},
+            {title: 'Learn TypeScript: Functions', note: 'Codecademy', img: '/img/certificates/typescript-functions.jpg', link:"Miha235's profile _ Codecademy_TypeScriptFunctions.pdf  "},
+            {title: 'Programming Foundations: Software Testing/QA', note: 'LinkedIn'},
+            {title: 'Customer Experience (CX) Strategy: How to Design an Organizational Approach', note:'LinkedIn'}
         ]
     },
     {

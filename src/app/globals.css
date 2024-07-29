@@ -107,3 +107,12 @@ body {
 #header-fade{
   background: linear-gradient(180deg, #181818, #18181800);
 }
+
+.certificate_in_box:hover .certificate{
+  clip-path: inset(0 0 0% 0);
+  transition: clip-path 0.5s;
+}
+
+.certificate_in_box:hover .skill-note{
+  display: none;
+}
