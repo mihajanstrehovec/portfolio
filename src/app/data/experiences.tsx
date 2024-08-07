@@ -176,7 +176,7 @@ const experiences = [
     {
         title: 'Software Developer',
         subTitle: 'ECHO events',
-        duration: '01/2024 - ongoing',
+        duration: '01/2024 - 07/2024',
         description: 'Developed and tested ticket validation app and management system',
         bulletPoints: [    
             'Wrote Python script to automate ticket creation, saving organizer time',

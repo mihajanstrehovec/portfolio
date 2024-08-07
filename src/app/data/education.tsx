@@ -8,8 +8,7 @@ const education = [
             'Developed using React library',
             'Firebase database',
             'Stripe payments',
-            'AJPES API',
-            'Abstract: https://mihastrehovec.si/portfolio/smart-checkin/'
+            'AJPES API'
         ]
     },
     {
