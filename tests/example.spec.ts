@@ -4,6 +4,7 @@ test('has title', async ({ page }) => {
   await page.goto('https://www.mihastrehovec.si/');
 
   // Expect a title "to contain" a substring.
+  // random comment
   await expect(page).toHaveTitle(/Miha Jan Strehovec/);
 });
 
