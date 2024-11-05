@@ -5,6 +5,7 @@ test('has title', async ({ page }) => {
 
   // Expect a title "to contain" a substring.
   // random comment
+  // random comment 2
   await expect(page).toHaveTitle(/Miha Jan Strehovec/);
 });
 
