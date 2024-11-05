@@ -8,6 +8,7 @@ test('has title', async ({ page }) => {
   // random comment 2
   // added gh-pages branch
   // it works!!
+  // anotehr stupid comment
   await expect(page).toHaveTitle(/Miha Jan Strehovec/);
 });
 
