@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Nov 06 09:53:34 GMT 2024","Wed Nov 06 09:53:36 GMT 2024","1264","Guest","Smoke test","Links","","","get started link",""
+"passed","Wed Nov 06 09:53:30 GMT 2024","Wed Nov 06 09:53:31 GMT 2024","1207","Host","Smoke test","Page contents","","","has title",""
+"passed","Wed Nov 06 09:53:29 GMT 2024","Wed Nov 06 09:53:29 GMT 2024","362","Host","Smoke test","Page contents","","","has title",""
+"passed","Wed Nov 06 09:53:32 GMT 2024","Wed Nov 06 09:53:32 GMT 2024","547","Guest","Smoke test","Links","","","get started link",""
+"passed","Wed Nov 06 09:53:33 GMT 2024","Wed Nov 06 09:53:34 GMT 2024","660","Host","Smoke test","Page contents","","","has title",""
+"passed","Wed Nov 06 09:53:29 GMT 2024","Wed Nov 06 09:53:29 GMT 2024","345","Guest","Smoke test","Links","","","get started link",""
