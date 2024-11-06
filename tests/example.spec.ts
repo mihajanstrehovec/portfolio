@@ -15,13 +15,16 @@ test('has title', async ({ page }) => {
   await allure.feature("Essential features");
   await allure.story("Authentication");
 
-  await allure.parentSuite("Tests for web interface");
-  await allure.suite("Tests for essential features");
-  await allure.subSuite("Tests for authentication");
+  await allure.parentSuite("Host");
+  await allure.suite("Smoke test");
+  await allure.subSuite("Page contents");
   await expect(page).toHaveTitle(/Miha Jan Strehovec/);
 });
 
 test('get started link', async ({ page }) => {
+  await allure.parentSuite("Guest");
+  await allure.suite("Smoke test");
+  await allure.subSuite("Links");
   await page.goto('https://www.mihastrehovec.si/');
 
   // Click the get started link.
