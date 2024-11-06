@@ -14,6 +14,10 @@ test('has title', async ({ page }) => {
   await allure.epic("Web interface");
   await allure.feature("Essential features");
   await allure.story("Authentication");
+
+  await allure.parentSuite("Tests for web interface");
+  await allure.suite("Tests for essential features");
+  await allure.subSuite("Tests for authentication");
   await expect(page).toHaveTitle(/Miha Jan Strehovec/);
 });
 
