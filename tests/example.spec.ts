@@ -11,6 +11,9 @@ test('has title', async ({ page }) => {
   // added gh-pages branch
   // it works!!
   // anotehr stupid comment
+  await allure.epic("Web interface");
+  await allure.feature("Essential features");
+  await allure.story("Authentication");
   await expect(page).toHaveTitle(/Miha Jan Strehovec/);
 });
 
