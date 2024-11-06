@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Nov 06 09:24:25 GMT 2024","Wed Nov 06 09:24:27 GMT 2024","1477","Tests for web interface","Tests for essential features","Tests for authentication","","","has title",""
+"passed","Wed Nov 06 09:24:23 GMT 2024","Wed Nov 06 09:24:24 GMT 2024","594","Tests for web interface","Tests for essential features","Tests for authentication","","","has title",""
+"passed","Wed Nov 06 09:24:24 GMT 2024","Wed Nov 06 09:24:25 GMT 2024","401","chromium","example.spec.ts","","","","get started link",""
+"passed","Wed Nov 06 09:24:29 GMT 2024","Wed Nov 06 09:24:31 GMT 2024","2486","Tests for web interface","Tests for essential features","Tests for authentication","","","has title",""
+"passed","Wed Nov 06 09:24:32 GMT 2024","Wed Nov 06 09:24:33 GMT 2024","972","webkit","example.spec.ts","","","","get started link",""
+"passed","Wed Nov 06 09:24:27 GMT 2024","Wed Nov 06 09:24:28 GMT 2024","627","firefox","example.spec.ts","","","","get started link",""
