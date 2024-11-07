@@ -11,6 +11,7 @@ test('has title', async ({ page }) => {
   // added gh-pages branch
   // it works!!
   // anotehr stupid comment
+  // ZOOWAP
   await allure.epic("Web interface");
   await allure.feature("Essential features");
   await allure.story("Authentication");
